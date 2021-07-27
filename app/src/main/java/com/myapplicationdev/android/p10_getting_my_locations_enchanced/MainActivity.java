@@ -138,6 +138,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(MainActivity.this, Records.class);
+                startActivity(a);
+            }
+        });
     }
 
     private boolean checkPermission() {
